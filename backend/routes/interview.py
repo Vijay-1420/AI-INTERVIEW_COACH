@@ -1,10 +1,10 @@
 from fastapi import APIRouter
+
 from backend.services.evaluator import evaluate_answer
 from backend.models.schema import AnswerRequest
 
-from database.db import SessionLocal
-from database.models import InterviewResponse
-
+from backend.database.db import SessionLocal
+from backend.database.models import InterviewResponse
 import random
 
 router = APIRouter()
