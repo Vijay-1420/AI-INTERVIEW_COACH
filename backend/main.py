@@ -1,5 +1,7 @@
 from fastapi import FastAPI
-from backend.routes.interview import router
+from services.evaluator import evaluate_answer
+from models.schema import AnswerRequest
+from routes.interview import router
 
 from database.db import engine
 from database.models import Base
