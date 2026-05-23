@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from backend.models.schema import AnswerRequest
-from services.evaluator import evaluate_answer
+from backend.services.evaluator import evaluate_answer
 
 from database.db import SessionLocal
 from database.models import InterviewResponse
