@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes.interview import router
+from backend.routes.interview import router
 
 from database.db import engine
 from database.models import Base
