@@ -1,5 +1,6 @@
-from fastapi import FastAPI
-from backend.routes.interview import router
+from fastapi import APIRouter
+from backend.services.evaluator import evaluate_answer
+from backend.database.db import SessionLocal
 
 from database.db import engine
 from database.models import Base
